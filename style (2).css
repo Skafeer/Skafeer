@@ -1,0 +1,163 @@
+body {
+    font-size: 15pt;
+    font-family: 'Tajawal', sans-serif;
+    background-color: #2D2D2D;
+}
+
+h1 , h2{
+    color: #D4AF37;
+}
+
+span{
+ color: #ffffff; 
+}
+
+header {
+    background-color: #1a1a1a;
+    background-size: 1000px;
+    padding: 2px 2px 2px 2px;
+    margin: -9px;
+    height: 100px;
+}
+
+.name-web {
+    text-align: right;
+    transform: translate(-65px, 10px);
+}
+
+.logo {
+    border-radius: 100px;
+   transform: translate(95px, -70px);
+}
+
+h1 {
+    font-size: 35px;
+}
+
+.about {
+    direction: ltr; /* تغيير الاتجاه إلى اليسار */
+    margin: 40px 0;
+    padding: 20px;
+    background-color: rgba(45, 45, 45, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skills-container {
+    direction: ltr; /* تغيير الاتجاه إلى اليسار */
+    margin: 40px 0;
+    padding: 20px;
+    background-color: rgba(45, 45, 45, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skills-title {
+    
+    color: #D4AF37;
+    margin-bottom: 30px;
+    font-size: 28px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.skills-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* تغيير من right إلى left */
+    transform: translateX(-190%); /* تعديل التحويل */
+    width: 80px;
+    height: 3px;
+    background-color: #D4AF37;
+}
+
+.skill-item {
+    margin-bottom: 25px;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: #F0F0F0;
+}
+
+.skill-percentage {
+    font-weight: bold;
+    color: #D4AF37;
+}
+
+.skill-bar {
+    height: 20px;
+    background-color: #3C3C3C;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-progress {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #D4AF37 0%, #FFD700 100%);
+    border-radius: 10px;
+    position: relative;
+    transition: width 1.5s ease-in-out;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
+.skill-progress::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px; /* تغيير من right إلى left */
+    width: 20px;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    animation: skillShine 1.5s infinite;
+}
+
+.contact {
+    direction: ltr; /* تغيير الاتجاه إلى اليسار */
+    margin: 40px 0;
+    padding: 20px;
+    background-color: rgba(45, 45, 45, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon-social {
+    margin: 20px 0;
+}
+
+.icon-social a {
+    border : 1px solid #FFFFFF;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1a1a1a;
+    margin: -10px -10px -10px;
+    padding: 10px 10px 10px;;
+}
+
+.footer-text {
+    color : #6F6F6F;
+    font-size: 15px;
+}
